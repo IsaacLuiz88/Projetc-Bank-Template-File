@@ -109,48 +109,33 @@ public class ContaCorrente implements Serializable, IConta{
 				}
 		}	
 	}
-	
-//	public static void transferir(float quantia, ContaCorrente origem, ContaCorrente destino) {
-//		if (origem.status && destino.status && quantia > 0 && quantia <= origem.saldo) {
-//			origem.saldo -= quantia;
-//			destino.saldo += quantia;
-//			origem.transacoes.add(new Transacao(quantia, LocalDateTime.now(), TipoTransacao.TRANSFERENCIA_DEBITO, destino));
-//			destino.transacoes.add(new Transacao(quantia, LocalDateTime.now(), TipoTransacao.TRANSFERENCIA_CREDITO, origem));
-//		}
-//	}
-
 
 	@Override
 	public boolean getSatus() {
-		// TODO Auto-generated method stub
 		return status;
 	}
 
 
 	@Override
 	public float getSaldo() {
-		// TODO Auto-generated method stub
 		return this.saldo;
 	}
 
 
 	@Override
 	public void setSaldo(float novoSaldo) {
-		// TODO Auto-generated method stub
 		this.saldo = novoSaldo;
 	}
 
 
 	@Override
 	public List<Transacao> getTransacoes() {
-		// TODO Auto-generated method stub
 		return transacoes;
 	}
 
 
 	@Override
 	public String getNumeroDaConta() {
-		// TODO Auto-generated method stub
 		return numero;
 	}
 	
