@@ -110,33 +110,28 @@ public class ContaPoupanca implements Serializable, IConta {
 
 	@Override
 	public boolean getSatus() {
-		// TODO Auto-generated method stub
 		return status;
 	}
 
 	@Override
 	public float getSaldo() {
-		// TODO Auto-generated method stub
 		return saldo;
 	}
 
 	@Override
 	public void setSaldo(float novoSaldo) {
-		// TODO Auto-generated method stub
 		this.saldo = novoSaldo;
 	}
 
 
 	@Override
 	public List<Transacao> getTransacoes() {
-		// TODO Auto-generated method stub
 		return transacoes;
 	}
 
 
 	@Override
 	public String getNumeroDaConta() {
-		// TODO Auto-generated method stub
 		return numero;
 	}
 
