@@ -50,10 +50,16 @@ public class Cliente implements Serializable{
 	
 	public IConta localizarContaPorNumero(String numero) {
 		IConta temp = new ContaCorrente(numero);
+		IConta temp1 = new ContaPoupanca(numero);
+
 		if(contas.contains(temp)) {
 			int index = contas.indexOf(temp);
 			temp = contas.get(index);
 			return temp;
+		}else if(contas.contains(temp1)) {
+			int index = contas.indexOf(temp1);
+			temp1 = contas.get(index);
+			return temp1;
 		}else
 			return null;
 	}
